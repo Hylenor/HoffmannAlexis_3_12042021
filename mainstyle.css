@@ -1,0 +1,204 @@
+html {
+  max-width: 375px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+header {
+  font-family: "Shrikhand";
+  background-color: #ffffff;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 4rem;
+}
+
+.adresse {
+  background-color: #eaeaea;
+  color: #4d4d4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 5px 7px -7px black;
+  font-size: 0.85em;
+  font-weight: 100;
+}
+.adresse i {
+  padding-right: 20px;
+  font-size: 1.25rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.intro h2 {
+  padding: 35px 0 0 0;
+  font-size: x-large;
+  font-weight: 700;
+  width: 75%;
+  margin: 0;
+}
+.intro p {
+  font-weight: 300;
+  font-size: large;
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+.intro a {
+  margin-top: 28px;
+  margin-bottom: 60px;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  background: #9356dc;
+  background: linear-gradient(353deg, #9356dc 0%, #ff79da 80%);
+  box-shadow: 0px 6px 7px 1px #c4c4c4;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement h2 {
+  display: flex;
+  align-items: flex-start;
+  margin: 40px 0 30px 10px;
+}
+.fonctionnement .fcarte {
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0px 3px 7px 2px #dbdbdb;
+  height: 70px;
+  font-weight: 500;
+}
+.fonctionnement .fcarte i {
+  color: #4d4d4d;
+  margin: 0 30px;
+  font-size: 1rem;
+}
+.fonctionnement .fcarte .nombre {
+  background-color: #9356dc;
+  border-radius: 100%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  margin-left: -10px;
+}
+
+#restaurants {
+  background-color: #f6f6f6;
+  padding-top: 30px;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+#restaurants h2 {
+  margin-left: 15px;
+}
+#restaurants .carterestaurant {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  height: 250px;
+  width: 90%;
+  background-color: white;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 3px 7px 2px #dbdbdb;
+}
+#restaurants .carterestaurant a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#restaurants .carterestaurant .nouveau {
+  background-color: #99e2d0;
+  border-radius: 2px;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #46917f;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#restaurants .carterestaurant img {
+  object-fit: cover;
+  height: 70%;
+  width: auto;
+}
+#restaurants .carterestaurant .cartetexte {
+  display: grid;
+  grid-template-columns: 1.6fr 0.4fr;
+  grid-template-rows: 50px;
+}
+#restaurants .carterestaurant .cartetexte h3 {
+  margin: 10px 0 0 10px;
+  grid-area: 1/1/2/3;
+}
+#restaurants .carterestaurant .cartetexte p {
+  margin: 40px 0 0 10px;
+  grid-area: 1/1/2/3;
+}
+#restaurants .carterestaurant .cartetexte i {
+  grid-area: 1/2/2/3;
+  font-size: 1.6em;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+footer h3 {
+  margin: 15px auto 15px 15px;
+  font-family: "Shrikhand";
+  color: white;
+  font-weight: 300;
+}
+footer .footerlien {
+  padding: 5px 0 5px 25px;
+}
+footer .footerlien a,
+footer .footerlien i {
+  color: white;
+  padding-right: 5px;
+}
+
+/*# sourceMappingURL=mainstyle.css.map */
