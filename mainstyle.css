@@ -1,7 +1,10 @@
 html {
-  max-width: 375px;
   width: 100%;
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
 }
 
 a:hover,
@@ -15,10 +18,17 @@ header {
   font-family: "Shrikhand";
   background-color: #ffffff;
 }
+
 header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   height: 4rem;
 }
@@ -26,26 +36,44 @@ header h1 {
 .adresse {
   background-color: #eaeaea;
   color: #4d4d4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0px 5px 7px -7px black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 0px 5px 7px -7px black;
+          box-shadow: inset 0px 5px 7px -7px black;
   font-size: 0.85em;
   font-weight: 100;
 }
+
 .adresse i {
   padding-right: 20px;
   font-size: 1.25rem;
 }
 
 .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   background-color: #f6f6f6;
 }
+
 .intro h2 {
   padding: 35px 0 0 0;
   font-size: x-large;
@@ -53,12 +81,14 @@ header h1 {
   width: 75%;
   margin: 0;
 }
+
 .intro p {
   font-weight: 300;
   font-size: large;
   padding: 20px 0 0 0;
   margin: 0;
 }
+
 .intro a {
   margin-top: 28px;
   margin-bottom: 60px;
@@ -68,43 +98,71 @@ header h1 {
   text-decoration: none;
   background: #9356dc;
   background: linear-gradient(353deg, #9356dc 0%, #ff79da 80%);
-  box-shadow: 0px 6px 7px 1px #c4c4c4;
+  -webkit-box-shadow: 0px 6px 7px 1px #c4c4c4;
+          box-shadow: 0px 6px 7px 1px #c4c4c4;
 }
 
 .fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .fonctionnement h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 40px 0 30px 10px;
 }
+
 .fonctionnement .fcarte {
   background-color: #f6f6f6;
   border-radius: 25px;
-  margin: 10px;
+  margin: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  box-shadow: 0px 3px 7px 2px #dbdbdb;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 3px 7px 2px #dbdbdb;
+          box-shadow: 0px 3px 7px 2px #dbdbdb;
   height: 70px;
   font-weight: 500;
 }
+
 .fonctionnement .fcarte i {
   color: #4d4d4d;
   margin: 0 30px;
   font-size: 1rem;
 }
+
 .fonctionnement .fcarte .nombre {
   background-color: #9356dc;
   border-radius: 100%;
   color: white;
   width: 25px;
   height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: small;
   margin-left: -10px;
 }
@@ -114,15 +172,27 @@ header h1 {
   padding-top: 30px;
   margin-top: 60px;
   padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 #restaurants h2 {
   margin-left: 15px;
 }
+
 #restaurants .carterestaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 15px;
   height: 250px;
   width: 90%;
@@ -130,8 +200,10 @@ header h1 {
   margin: 10px auto;
   position: relative;
   overflow: hidden;
-  box-shadow: 0px 3px 7px 2px #dbdbdb;
+  -webkit-box-shadow: 0px 3px 7px 2px #dbdbdb;
+          box-shadow: 0px 3px 7px 2px #dbdbdb;
 }
+
 #restaurants .carterestaurant a {
   position: absolute;
   width: 100%;
@@ -139,14 +211,21 @@ header h1 {
   top: 0;
   left: 0;
 }
+
 #restaurants .carterestaurant .nouveau {
   background-color: #99e2d0;
   border-radius: 2px;
   height: 30px;
   width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 0.85em;
   font-weight: bold;
   color: #46917f;
@@ -154,51 +233,83 @@ header h1 {
   top: 10px;
   right: 10px;
 }
+
 #restaurants .carterestaurant img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 70%;
   width: auto;
 }
+
 #restaurants .carterestaurant .cartetexte {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1.6fr 0.4fr;
-  grid-template-rows: 50px;
+  -ms-grid-columns: 1.6fr 0.4fr;
+      grid-template-columns: 1.6fr 0.4fr;
+  -ms-grid-rows: 50px;
+      grid-template-rows: 50px;
 }
+
 #restaurants .carterestaurant .cartetexte h3 {
   margin: 10px 0 0 10px;
-  grid-area: 1/1/2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 2 / 3;
 }
+
 #restaurants .carterestaurant .cartetexte p {
   margin: 40px 0 0 10px;
-  grid-area: 1/1/2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 2 / 3;
 }
+
 #restaurants .carterestaurant .cartetexte i {
-  grid-area: 1/2/2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
   font-size: 1.6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 25px;
 }
 
 footer {
   background-color: #353535;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 40px;
 }
+
 footer h3 {
   margin: 15px auto 15px 15px;
   font-family: "Shrikhand";
   color: white;
   font-weight: 300;
 }
+
 footer .footerlien {
   padding: 5px 0 5px 25px;
 }
+
 footer .footerlien a,
 footer .footerlien i {
   color: white;
   padding-right: 5px;
 }
-
 /*# sourceMappingURL=mainstyle.css.map */

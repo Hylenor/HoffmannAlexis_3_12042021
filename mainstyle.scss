@@ -1,9 +1,11 @@
 html {
-  max-width: 375px;
   width: 100%;
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  margin:0;
+}
 a:hover,
 a:visited,
 a:link,
@@ -89,7 +91,7 @@ header {
   .fcarte {
     background-color: #f6f6f6;
     border-radius: 25px;
-    margin: 10px;
+    margin: 10px 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
