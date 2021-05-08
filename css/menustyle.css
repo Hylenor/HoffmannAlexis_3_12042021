@@ -160,8 +160,8 @@ main section.menu .cartemenu {
   padding-left: 1rem;
   -webkit-box-shadow: 0px 3px 7px 2px #dbdbdb;
           box-shadow: 0px 3px 7px 2px #dbdbdb;
-  -webkit-animation: platstranslate 1.2s linear;
-          animation: platstranslate 1.2s linear;
+  -webkit-animation: platstranslate 1s linear;
+          animation: platstranslate 1s linear;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -176,18 +176,23 @@ main section.menu .cartemenu {
 }
 
 main section.menu .cartemenu:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation: platstranslate 1.2s linear;
+          animation: platstranslate 1.2s linear;
 }
 
 main section.menu .cartemenu:nth-child(3) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  -webkit-animation: platstranslate 1.4s linear;
+          animation: platstranslate 1.4s linear;
 }
 
 main section.menu .cartemenu:nth-child(4) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-animation: platstranslate 1.6s linear;
+          animation: platstranslate 1.6s linear;
+}
+
+main section.menu .cartemenu:nth-child(5) {
+  -webkit-animation: platstranslate 1.8s linear;
+          animation: platstranslate 1.8s linear;
 }
 
 main section.menu .cartemenu:hover .validation {
@@ -202,8 +207,8 @@ main section.menu .cartemenu:hover .fas {
 main section.menu .cartemenu .fas {
   -webkit-transform: rotateZ(180deg);
           transform: rotateZ(180deg);
-  -webkit-transition: all 0.3s ease !important;
-  transition: all 0.3s ease !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @-webkit-keyframes platstranslate {
@@ -318,6 +323,13 @@ main a {
   -webkit-box-shadow: 0px 6px 7px 1px #c4c4c4;
           box-shadow: 0px 6px 7px 1px #c4c4c4;
   max-width: 15rem;
+}
+
+main a:hover {
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+  -webkit-box-shadow: 0px 6px 7px 1px #929292;
+          box-shadow: 0px 6px 7px 1px #929292;
 }
 
 @media (min-width: 1124px) {
