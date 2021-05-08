@@ -43,6 +43,100 @@ footer .footerlien i {
   padding-right: 5px;
 }
 
+@-webkit-keyframes scaleDown {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleDown {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes hidebackground {
+  0% {
+    z-index: 100;
+  }
+  99% {
+    z-index: 100;
+  }
+  100% {
+    z-index: -12;
+    visibility: hidden;
+  }
+}
+
+@keyframes hidebackground {
+  0% {
+    z-index: 100;
+  }
+  99% {
+    z-index: 100;
+  }
+  100% {
+    z-index: -12;
+    visibility: hidden;
+  }
+}
+
+.spin-container {
+  text-align: center;
+  padding-top: 300px;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  -webkit-animation: hidebackground 3s forwards;
+          animation: hidebackground 3s forwards;
+}
+
+.dot-loader {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #9356dc;
+  position: relative;
+  -webkit-animation: 1.2s scaleDown ease-in-out infinite;
+  animation: 1.2s scaleDown ease-in-out infinite;
+}
+
+.dot-loader:nth-child(2) {
+  background-color: #ff79da;
+  margin: 0 15px;
+  -webkit-animation: 1.2s scaleDown ease-in-out infinite 0.15555s;
+  animation: 1.2s scaleDown ease-in-out infinite 0.15555s;
+}
+
+.dot-loader:nth-child(3) {
+  background-color: #99e2d0;
+  -webkit-animation: 1.2s scaleDown ease-in-out infinite 0.3s;
+  animation: 1.2s scaleDown ease-in-out infinite 0.3s;
+}
+
 header {
   font-family: "Shrikhand";
   background-color: #ffffff;
@@ -125,8 +219,8 @@ header h1 {
   padding: 15px 25px;
   border-radius: 30px;
   text-decoration: none;
-  background: #9356DC;
-  background: linear-gradient(353deg, #9356DC 0%, #FF79DA 80%);
+  background: #9356dc;
+  background: linear-gradient(353deg, #9356dc 0%, #ff79da 80%);
   -webkit-box-shadow: 0px 6px 7px 1px #c4c4c4;
           box-shadow: 0px 6px 7px 1px #c4c4c4;
 }
@@ -149,6 +243,12 @@ header h1 {
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 40px 0 30px 10px;
+}
+
+.fonctionnement .fcartebox {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
 }
 
 .fonctionnement .fcarte {
@@ -178,7 +278,7 @@ header h1 {
 }
 
 .fonctionnement .fcarte .nombre {
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 100%;
   color: white;
   width: 25px;
@@ -194,6 +294,15 @@ header h1 {
           justify-content: center;
   font-size: small;
   margin-left: -10px;
+}
+
+.fcarte:hover {
+  background-color: #eddffd;
+  color: #9356dc;
+}
+
+.fcarte:hover i {
+  color: #9356dc;
 }
 
 #restaurants {
@@ -311,12 +420,22 @@ header h1 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 25px;
+  position: absolute;
+  right: 40px;
 }
 
-@media (min-width: 1124px) {
-  html {
-    width: unset;
-  }
+#restaurants .carterestaurant .cartetexte i:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-transition: all 0.8s linear;
+  transition: all 0.8s linear;
+  font-weight: 800;
+}
+
+@media (min-width: 768px) {
   .fonctionnement {
     justify-items: center;
     display: -ms-grid;
@@ -327,7 +446,37 @@ header h1 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .fonctionnement .fcartebox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .fonctionnement .fcarte {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1124px) {
+  html {
+    width: unset;
+  }
+  .fonctionnement {
+    justify-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .fonctionnement h2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fonctionnement .fcartebox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .fonctionnement .fcartebox .fcarte {
     width: 17%;
   }
   #restaurants {
@@ -345,22 +494,6 @@ header h1 {
   #restaurants .carterestaurant .nouveau {
     height: 60px;
     width: 200px;
-  }
-}
-
-@media (min-width: 768px) {
-  .fonctionnement {
-    justify-items: center;
-    display: -ms-grid;
-    display: grid;
-  }
-  .fonctionnement h2 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .fonctionnement .fcarte {
-    width: 60%;
   }
 }
 /*# sourceMappingURL=mainstyle.css.map */
